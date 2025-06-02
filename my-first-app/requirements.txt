@@ -6,3 +6,4 @@ uvicorn
 pillow
 numpy
 torchvision
+python-multipart
