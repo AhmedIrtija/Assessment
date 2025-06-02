@@ -1,0 +1,8 @@
+torch
+onnx
+onnxruntime
+fastapi
+uvicorn
+pillow
+numpy
+torchvision
