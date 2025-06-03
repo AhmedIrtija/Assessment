@@ -3,6 +3,7 @@ import os
 
 def test_model_inference(img_Path: str):
     try:
+        # Initialize the preprocessor and model
         preprocessor = ImagePreprocessor()
         model = ONNXModel("model.onnx")
 
@@ -15,6 +16,7 @@ def test_model_inference(img_Path: str):
         return
 
     try:
+        # Preprocess the image
         img = preprocessor.preprocess(img_Path)
 
     except Exception as e:
@@ -22,6 +24,7 @@ def test_model_inference(img_Path: str):
         return
 
     try:
+        # Run inference
         pred_class = model.predict(img)
         print(f"Predicted class: {pred_class}")
         

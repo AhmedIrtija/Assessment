@@ -11,12 +11,13 @@ HEADERS = {
     "Authorization": f"Bearer {API_KEY}"
 }
 
-
+# Function to send a prediction request to the API
 def predict(image_path):
     if not os.path.exists(image_path):
         print(f"[ERROR] Image not found: {image_path}")
         return
 
+    # Open the image file and send it to the API
     with open(image_path, "rb") as f:
         files = {"file": f}
         start_time = time.time()

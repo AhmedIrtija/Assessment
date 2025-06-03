@@ -9,6 +9,7 @@ app = FastAPI()
 model = ONNXModel("model.onnx")
 preprocessor = ImagePreprocessor()
 
+# Define the prediction endpoint
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
     path = f"/tmp/{file.filename}"

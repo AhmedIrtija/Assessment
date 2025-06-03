@@ -59,6 +59,12 @@ To run platform monitoring tests:
 python test_server.py --run-tests
 ```
 
+## Sources
+
+- Pytorch Documentation to Convert to ONNX model - [[Link to Documentation](https://discuss.pytorch.org/t/convert-pytorch-model-to-onnx-format-inference-not-same/145005)]
+- Pytorch Documentation - [[Link to Documentation](https://docs.pytorch.org/docs/stable/generated/torch.nn.Module.html#torch.nn.Module)]
+- ONNX Load and Run Documentation - [[Link to Documentation](https://onnxruntime.ai/docs/api/python/api_summary.html#InferenceSession.run)]
+- Cerebrium Documentation - [[Link to Documentation](https://docs.cerebrium.ai/cerebrium/getting-started/introduction)]
 
 ## Contact 
 ahmedirtija8@gmail.com
